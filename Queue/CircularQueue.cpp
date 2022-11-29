@@ -65,7 +65,7 @@ void Queue::display()
 		int i = (front + 1);
 		do
 		{
-			cout << Q[i] << " ken";
+			cout << Q[i] << " ";
 			i = (i + 1) % size;
 		} while (i != (rear + 1) % size);
 		cout << endl;
