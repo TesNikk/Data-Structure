@@ -47,7 +47,7 @@ void Queue::enqueue() {
 }
 void Queue::dequeue() {
 	int x = -1;
-	if (front == rear ==-1) {
+	if (front == rear) {
 		cout << "Queue is empty" << endl;
 	}
 	else {
@@ -63,7 +63,7 @@ void Queue::dequeue() {
 }
 void Queue::display() {
 	cout << "Displaying Values: " << endl;
-	if (front == rear ==-1) {
+	if (front == rear) {
 		cout << "Queue is empty" << endl;
 	}
 	for (int i = front+1; i <= rear; i++) {

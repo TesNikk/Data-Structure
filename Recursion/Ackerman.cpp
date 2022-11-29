@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-long long Ackerman(long long m, long long n)
+long long Ackerman(int m, int n)
 {
     if (m == 0)
     {
@@ -14,10 +14,11 @@ long long Ackerman(long long m, long long n)
     {
         return Ackerman(m - 1, Ackerman(m, n - 1));
     }
+    return 0;
 }
 int main()
 {
-    long long m, n;
+    int m, n;
     cout << "Input M  N" << endl;
     cin >> m >> n;
     cout<<Ackerman(m,n)<<endl;
