@@ -32,7 +32,6 @@ int precedence(char c)
         return 0;
     }
 }
-
 void infixToPostfix(string infix)
 {
     stack<char> s;

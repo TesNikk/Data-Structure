@@ -10,13 +10,14 @@ int TOH(int n, char src, char dest, char aux)
         cout << "Move from " << src << " to " << dest << endl;
         TOH(n - 1, aux, dest, src);
     }
+    return count;
 }
 int main()
 {
     int n;
     cout << "Enter How many Discs" << endl;
     cin >> n;
-    TOH(n, 'A', 'B', 'C');
-    cout << "Steps = " << count << endl;
+    int cnt=TOH(n, 'A', 'B', 'C');
+    cout << "Steps = " << cnt << endl;
     return 0;
 }
